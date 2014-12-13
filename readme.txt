@@ -102,7 +102,7 @@ Install and activate. Paste shortcode [tracking-info] in Contact Form 7 Message 
 You can simply activate, deactivate or delete it in your plugin management section.
 
 = Are there any known incompatibilities? =
-If you are using [Contact Form 7 Leads Tracking](https://wordpress.org/plugins/contact-form-7-leads-tracking/) and this plugin is active, the CONTACT FORM 7 LEAD INFO WITH COUNTRY will not work.
+If you are using [Contact Form 7 Leads Tracking](https://wordpress.org/plugins/contact-form-7-leads-tracking/) and this plugin is active, the CONTACT FORM 7 LEAD INFO WITH COUNTRY will not work. Please deactivate "Contact Form 7 Leads Tracking".
 
 = Why does this plugin offer no support for Wordpress versions before 3.5? =
 Because the [GeoIP Detection plugin](https://wordpress.org/plugins/geoip-detect/) needs at least WordPress 3.5, we decided to also ask for a version equal or higher than WordPress 3.5. 
