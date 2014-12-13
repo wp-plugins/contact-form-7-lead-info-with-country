@@ -75,6 +75,9 @@ In order to show Country information, you need to have [GeoIP Detection plugin](
 = What is CONTACT FORM 7 LEAD INFO WITH COUNTRY good for? =
 This plugin adds the Form Page URL, Original Referrer, Landing Page, User IP, Country of the User IP and Browser to Contact Form 7 when inserting the [tracking-info] shortcode in the Message body.
 
+= Plugin doesn't seem to work. No information is displayed in the email received by Contact Form 7 =
+In order to make this plugin work, you need to insert the shortcode [tracking-info] in the Message Body of the contact form. If you don't insert the shortcode [tracking-info] the info will not be added. It's made like this so that you can decide in which contact forms you want to display the info.
+
 = Do I need to install another plugin to make this one work?  =
 Contact Form 7 Lead info with country is an **addon module for the Contact Form 7 plugin**. You need to have [Contact Form 7](https://wordpress.org/plugins/contact-form-7/) installed and active.
 In order to display the Country it needs the [GeoIP Detection plugin](https://wordpress.org/plugins/geoip-detect/) that can be found in the WordPress plugin repository. This plugin "provides geographic information detected by an IP adress". *This plugin auto-updates the GeoIP database once a week. This product includes GeoLite data created by MaxMind, available from [www.maxmind.com](http://www.maxmind.com).*
@@ -93,7 +96,7 @@ Think of it as an "educated guess": IP adresses and their allocation change on a
 The plugin doesn't make any changes to the database. It only adds the tracking info to the email sent by contact form 7.
 
 = How can I check out if the plugin works for me? =
-Install and activate. Paste shortcode in Contact Form 7 Message body. Test contact form. In the email you receive you should see the tracking info added where you placed the shortocde.
+Install and activate. Paste shortcode [tracking-info] in Contact Form 7 Message body. Test contact form. In the email you receive you should see the tracking info added where you placed the shortocde.
 
 = How can I remove CONTACT FORM 7 LEAD INFO WITH COUNTRY? =
 You can simply activate, deactivate or delete it in your plugin management section.
