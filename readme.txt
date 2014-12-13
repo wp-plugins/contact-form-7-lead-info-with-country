@@ -50,6 +50,8 @@ The lead tracking info in this plugin includes:
 = CONTACT FORM 7 LEAD INFO WITH COUNTRY in your Language! =
 This first release is avaliable in English and Spanish. In the languages folder we have included the necessary files to translate this plugin.
 
+You can find more info for translating the plugin here: [Translating WordPress Plugins](https://wordpress.org/plugins/contact-form-7-lead-info-with-country/other_notes/#Translating-WordPress-Plugins)
+
 If you would like the plugin in your language and you're good at translating, please drop us a line at [Contact us](http://apasionados.es/contacto/index.php?desde=wordpress-org-contactform7leadinfowithcountry-home).
 
 = Further Reading =
