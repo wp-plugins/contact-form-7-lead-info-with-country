@@ -59,6 +59,8 @@ You can access the description of the plugin in Spanish at: [Contact Form 7 Lead
 
 
 == Installation ==
+Contact Form 7 Lead info with country is an **addon module for the Contact Form 7 plugin**, that's why you need to have [Contact Form 7](https://wordpress.org/plugins/contact-form-7/) installed and active.
+In order to show Country information, you need to have [GeoIP Detection plugin](https://wordpress.org/plugins/geoip-detect/) installed and active.
 
 1. Upload the `contact-form-7-lead-info-with-country` folder to the `/wp-content/plugins/` directory (or to the directory where your WordPress plugins are located)
 1. Activate the "Contact Form 7 Lead info with country" plugin through the 'Plugins' menu in WordPress.
