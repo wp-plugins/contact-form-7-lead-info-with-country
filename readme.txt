@@ -42,7 +42,7 @@ The lead tracking info in this plugin includes:
     The IP address of the user who filled out the form.
 
 1. **Country of the IP**
-    The country of the IP address of the user who filled out the form. If the country is 0, please check the FAQ information.
+    The country of the IP address of the user who filled out the form. If the country is 0, please check the [FAQ](https://wordpress.org/plugins/contact-form-7-lead-info-with-country/faq/) information.
 	
 1. **User Agent / Browser**
     The browser information of the user who filled the form.
