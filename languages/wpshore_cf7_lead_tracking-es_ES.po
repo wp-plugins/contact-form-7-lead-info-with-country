@@ -1,0 +1,81 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Contact Form 7 Leads Tracking\n"
+"POT-Creation-Date: 2014-12-12 09:15+0100\n"
+"PO-Revision-Date: 2014-12-12 09:16+0100\n"
+"Last-Translator: Ramon <marketing@apasionados.es>\n"
+"Language-Team: Apasionados <info@apasionados.es>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../wpshore_cf7_lead_tracking.php:28
+msgid "Contact Form 7 Leads Tracking"
+msgstr "Contact Form 7 Leads Tracking"
+
+#: ../wpshore_cf7_lead_tracking.php:28
+msgid "Contact Form 7 Leads Tracking Enhanced"
+msgstr "Contact Form 7 Leads Tracking Mejorado"
+
+#: ../wpshore_cf7_lead_tracking.php:28
+msgid ""
+"Adds tracking info to contact form 7 outgoing emails when pasting the "
+"[tracking-info] shortcode in the Message body. The lead tracking info "
+"includes: Form Page URL, Original Referrer, Landing Page, User IP, Country "
+"of the User IP and Browser. In order to display the Country it needs the "
+"\"GeoIP Detection\" plugin that can be found in the WordPress plugin "
+"repository."
+msgstr ""
+"Añade la información de seguimiento a todos los emails de Contact Form 7 si "
+"se añade el shortcode  [tracking-info] en el \"cuerpo del mensaje\". Añade "
+"información sobre: Página de aterrizaje, página desde la que se ha enviado, "
+"procedencia, IP, país que corresponde a la IP y navegador."
+
+#: ../wpshore_cf7_lead_tracking.php:52
+msgid "-- Tracking Info --"
+msgstr "-- Información --"
+
+#: ../wpshore_cf7_lead_tracking.php:54
+msgid "The user filled the form on:"
+msgstr "Formulario:"
+
+#: ../wpshore_cf7_lead_tracking.php:57
+msgid "The user came to your website from:"
+msgstr "Procedencia:"
+
+#: ../wpshore_cf7_lead_tracking.php:60
+msgid "Landing page on your website:"
+msgstr "Página de aterrizaje:"
+
+#: ../wpshore_cf7_lead_tracking.php:63
+msgid "IP:"
+msgstr "IP:"
+
+#: ../wpshore_cf7_lead_tracking.php:68
+msgid "Country:"
+msgstr "País:"
+
+#: ../wpshore_cf7_lead_tracking.php:70
+msgid "Region:"
+msgstr "Región:"
+
+#: ../wpshore_cf7_lead_tracking.php:73
+msgid "Postal Code + City:"
+msgstr "Código Postal + Ciudad:"
+
+#: ../wpshore_cf7_lead_tracking.php:79
+msgid "Proxy Server IP:"
+msgstr "IP proxy:"
+
+#: ../wpshore_cf7_lead_tracking.php:82
+msgid "Browser is:"
+msgstr "Navegador:"
+
+#~ msgid "User's IP:"
+#~ msgstr "IP:"
