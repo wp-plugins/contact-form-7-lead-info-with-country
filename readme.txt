@@ -3,8 +3,8 @@ Contributors: apasionados, netconsulting
 Donate link: http://apasionados.es/
 Tags: contact form 7, contact form, contact, lead tracking, user info, user visit, country, ip, email, form
 Requires at least: 3.5
-Tested up to: 4.0.1
-Stable tag: 1.1
+Tested up to: 4.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Contact Form 7 Lead Info with country helps to track users that fill in forms.
 
 == Description ==
 
-Contact Form 7 Lead info with country is an addon module for the Contact Form 7 plugin. It helps you track the user who fills out a form.
+Contact Form 7 Lead info with country is an **addon module for the[Contact Form 7](https://wordpress.org/plugins/contact-form-7/) plugin**. It helps you track the user who fills out a form.
 All you need to do is add the [tracking-info] shortcode in the Message body of the contact form 7.
 
 This plugin is an enhanced version of the plugin [Contact Form 7 Leads Tracking](https://wordpress.org/plugins/contact-form-7-leads-tracking/), that includes translations and the lookup of the country of the IP from which the form is sent.
@@ -72,6 +72,7 @@ You can access the description of the plugin in Spanish at: [Contact Form 7 Lead
 This plugin adds the Form Page URL, Original Referrer, Landing Page, User IP, Country of the User IP and Browser to Contact Form 7 when inserting the [tracking-info] shortcode in the Message body.
 
 = Do I need to install another plugin to make this one work?  =
+Contact Form 7 Lead info with country is an **addon module for the Contact Form 7 plugin**. You need to have [Contact Form 7](https://wordpress.org/plugins/contact-form-7/) installed and active.
 In order to display the Country it needs the [GeoIP Detection plugin](https://wordpress.org/plugins/geoip-detect/) that can be found in the WordPress plugin repository. This plugin "provides geographic information detected by an IP adress". *This plugin auto-updates the GeoIP database once a week. This product includes GeoLite data created by MaxMind, available from [www.maxmind.com](http://www.maxmind.com).*
 
 If the [GeoIP Detection plugin](https://wordpress.org/plugins/geoip-detect/) is not installed and enabled, you will only see the IP address, without the country of the IP adress.
@@ -94,7 +95,7 @@ Install and activate. Paste shortcode in Contact Form 7 Message body. Test conta
 You can simply activate, deactivate or delete it in your plugin management section.
 
 = Are there any known incompatibilities? =
-No that we know.
+If you are using [Contact Form 7 Leads Tracking](https://wordpress.org/plugins/contact-form-7-leads-tracking/) and this plugin is active, the CONTACT FORM 7 LEAD INFO WITH COUNTRY will not work.
 
 = Why does this plugin offer no support for Wordpress versions before 3.5? =
 Because the [GeoIP Detection plugin](https://wordpress.org/plugins/geoip-detect/) needs at least WordPress 3.5, we decided to also ask for a version equal or higher than WordPress 3.5. 
@@ -103,6 +104,9 @@ Because the [GeoIP Detection plugin](https://wordpress.org/plugins/geoip-detect/
 Of course we do. ;-)
 
 == Changelog ==
+
+= 1.1.1 =
+* Change to solve error in line 101 of the plugin when WordPress DEBUG is TRUE: Notice: "Undefined index: HTTP_REFERER in contact-form-7-lead-info-with-country/wpshore_cf7_lead_tracking.php on line 101"
 
 = 1.1 =
 * First stable release.
@@ -115,8 +119,8 @@ Of course we do. ;-)
 
 == Upgrade Notice ==
 
-= 1.1 =
-* First stable release.
+= 1.1.1 =
+* Debug error solved.
 
 == Contact ==
 
@@ -139,10 +143,10 @@ That is, the plugin name name must be the language code followed by an underscor
 
 For example:
 
-* en_US – US English
-* en_UK – UK English
-* es_ES – Spanish from Spain
-* fr_FR – French from France
-* zh_CN – Simplified Chinese
+* en_US for US English
+* en_UK for UK English
+* es_ES for Spanish from Spain
+* fr_FR for French from France
+* zh_CN for Simplified Chinese
 
 A list of language codes can be found [here](http://en.wikipedia.org/wiki/ISO_639), and country codes can be found [here](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). A full list of encoding names can also be found at [IANA](http://www.iana.org/assignments/character-sets).

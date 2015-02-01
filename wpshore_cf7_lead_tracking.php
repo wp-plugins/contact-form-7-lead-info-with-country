@@ -98,7 +98,7 @@ if ( !is_plugin_active( 'contact-form-7-leads-tracking/wpshore_cf7_lead_tracking
 	
 		if (!isset($_SESSION['OriginalRef'])) 
 		{
-			$_SESSION['OriginalRef'] = $_SERVER['HTTP_REFERER']; 
+			$_SESSION['OriginalRef'] = $_SERVER["HTTP_REFERER"]; 
 		}
 	
 		if (!isset($_SESSION['LandingPage'])) 
