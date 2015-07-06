@@ -12,7 +12,7 @@ Contact Form 7 Lead Info with country helps to track users that fill in forms.
 
 == Description ==
 
-Contact Form 7 Lead info with country is an **addon module for the[Contact Form 7](https://wordpress.org/plugins/contact-form-7/) plugin**. It helps you track the user who fills out a form.
+Contact Form 7 Lead info with country is an **addon module for the [Contact Form 7](https://wordpress.org/plugins/contact-form-7/) plugin**. It helps you track the user who fills out a form.
 All you need to do is add the [tracking-info] shortcode in the Message body of the contact form 7.
 
 This plugin is an enhanced version of the plugin [Contact Form 7 Leads Tracking](https://wordpress.org/plugins/contact-form-7-leads-tracking/), that includes translations and the lookup of the country of the IP from which the form is sent.
