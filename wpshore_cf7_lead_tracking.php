@@ -5,7 +5,7 @@ Plugin URI: http://www.wpshore.com/plugins/contact-form-7-leads-tracking/
 Description: Adds tracking info to contact form 7 outgoing emails when pasting the [tracking-info] shortcode in the Message body. The lead tracking info includes: Form Page URL, Original Referrer, Landing Page, User IP, Country of the User IP and Browser. In order to display the Country it needs the "GeoIP Detection" plugin that can be found in the WordPress plugin repository.
 Author: Apasionados
 Author URI: http://apasionados.es/
-Version: 1.1
+Version: 1.2
 Text Domain: wpshore_cf7_lead_tracking
 */
 
@@ -98,7 +98,11 @@ if ( !is_plugin_active( 'contact-form-7-leads-tracking/wpshore_cf7_lead_tracking
 	
 		if (!isset($_SESSION['OriginalRef'])) 
 		{
-			$_SESSION['OriginalRef'] = $_SERVER["HTTP_REFERER"]; 
+			if(isset($_SERVER['HTTP_REFERER'])) {
+				$_SESSION['OriginalRef'] = $_SERVER["HTTP_REFERER"];
+			} else {
+				$_SESSION['OriginalRef'] = __('not set','wpshore_cf7_lead_tracking');
+			}
 		}
 	
 		if (!isset($_SESSION['LandingPage'])) 

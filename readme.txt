@@ -3,8 +3,8 @@ Contributors: apasionados, netconsulting
 Donate link: http://apasionados.es/
 Tags: contact form 7, contact form, contact, lead tracking, user info, user visit, country, ip, email, form
 Requires at least: 3.5
-Tested up to: 4.1.0
-Stable tag: 1.1.1
+Tested up to: 4.2.2
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Contact Form 7 Lead Info with country helps to track users that fill in forms.
 
 == Description ==
 
-Contact Form 7 Lead info with country is an **addon module for the[Contact Form 7](https://wordpress.org/plugins/contact-form-7/) plugin**. It helps you track the user who fills out a form.
+Contact Form 7 Lead info with country is an **addon module for the [Contact Form 7](https://wordpress.org/plugins/contact-form-7/) plugin**. It helps you track the user who fills out a form.
 All you need to do is add the [tracking-info] shortcode in the Message body of the contact form 7.
 
 This plugin is an enhanced version of the plugin [Contact Form 7 Leads Tracking](https://wordpress.org/plugins/contact-form-7-leads-tracking/), that includes translations and the lookup of the country of the IP from which the form is sent.
@@ -53,7 +53,7 @@ This first release is avaliable in English and Spanish. In the languages folder 
 If you would like the plugin in your language and you're good at translating, please drop us a line at [Contact us](http://apasionados.es/contacto/index.php?desde=wordpress-org-contactform7leadinfowithcountry-home).
 
 = Further Reading =
-You can access the description of the plugin in Spanish at: [Contact Form 7 Lead info with country en castellano](http://apasionados.es/blog/).
+You can access the description of the plugin in Spanish at: [Contact Form 7 Lead info with country en castellano](http://apasionados.es/blog/informacion-pais-contact-form-7-plugin-wordpress-6061/).
 
 
 == Installation ==
@@ -105,6 +105,9 @@ Of course we do. ;-)
 
 == Changelog ==
 
+= 1.2 =
+* Solved error when WordPress DEBUG was true: "Notice: Undefined index: HTTP_REFERER" when HTTP_REFERER was not set by browser
+
 = 1.1.1 =
 * Change to solve error in line 101 of the plugin when WordPress DEBUG is TRUE: Notice: "Undefined index: HTTP_REFERER in contact-form-7-lead-info-with-country/wpshore_cf7_lead_tracking.php on line 101"
 
@@ -119,8 +122,8 @@ Of course we do. ;-)
 
 == Upgrade Notice ==
 
-= 1.1.1 =
-* Debug error solved.
+= 1.2 =
+* Solved error when WordPress DEBUG was true: "Notice: Undefined index: HTTP_REFERER"
 
 == Contact ==
 
