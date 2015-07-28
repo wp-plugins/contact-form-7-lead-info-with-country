@@ -5,7 +5,7 @@ Plugin URI: http://www.wpshore.com/plugins/contact-form-7-leads-tracking/
 Description: Adds tracking info to contact form 7 outgoing emails when pasting the [tracking-info] shortcode in the Message body. The lead tracking info includes: Form Page URL, Original Referrer, Landing Page, User IP, Country of the User IP and Browser. In order to display the Country it needs the "GeoIP Detection" plugin that can be found in the WordPress plugin repository.
 Author: Apasionados
 Author URI: http://apasionados.es/
-Version: 1.2
+Version: 1.3
 Text Domain: wpshore_cf7_lead_tracking
 */
 
@@ -63,8 +63,9 @@ if ( !is_plugin_active( 'contact-form-7-leads-tracking/wpshore_cf7_lead_tracking
 		$trackingInfo .= __('IP:','wpshore_cf7_lead_tracking') . ' ' . $_SERVER["REMOTE_ADDR"] . $lineBreak;
 
 		if ( is_plugin_active( 'geoip-detect/geoip-detect.php' ) ) {
-			//$trackingCountry = geoip_detect_get_info_from_current_ip(); This function does not provide Region and City info.
-			$trackingCountry = geoip_detect_get_info_from_ip($_SERVER["REMOTE_ADDR"]); // This function provides Region and City info.
+			// v1.3: Changed the "GeoIP Detection" function used to lookup IP data from "geoip_detect_get_info_from_ip($_SERVER["REMOTE_ADDR"])" to "geoip_detect_get_info_from_current_ip()". When doing the tests with previous versions of "GeoIP Detection" the "geoip_detect_get_info_from_current_ip()" function did not provide Region and City info and we decided to use "geoip_detect_get_info_from_ip($_SERVER["REMOTE_ADDR"])" to get it, taking into account that reverse proxies were not supported. As the "geoip_detect_get_info_from_current_ip()" works correctly in actual releases of the plugin we decided to switch to it and support reverse proxies. 
+			$trackingCountry = geoip_detect_get_info_from_current_ip();
+			//$trackingCountry = geoip_detect_get_info_from_ip($_SERVER["REMOTE_ADDR"]);
 			$trackingInfo .= __('Country:','wpshore_cf7_lead_tracking') . ' ' . $trackingCountry->country_name . ' (' . $trackingCountry->country_code . ' - ' . $trackingCountry->continent_code . ')';
 			if (!empty($trackingCountry->region_name)) {
 				$trackingInfo .= ' - ' . __('Region:','wpshore_cf7_lead_tracking') . ' ' . $trackingCountry->region_name . '(' . $trackingCountry->region . ')';

@@ -3,8 +3,8 @@ Contributors: apasionados, netconsulting
 Donate link: http://apasionados.es/
 Tags: contact form 7, contact form, contact, lead tracking, user info, user visit, country, ip, email, form
 Requires at least: 3.5
-Tested up to: 4.2.2
-Stable tag: 1.2
+Tested up to: 4.2.3
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -105,6 +105,9 @@ Of course we do. ;-)
 
 == Changelog ==
 
+= 1.3 =
+* Changed function used to retrieve the IP data from "GeoIP Detection" to support reverse proxies.
+
 = 1.2 =
 * Solved error when WordPress DEBUG was true: "Notice: Undefined index: HTTP_REFERER" when HTTP_REFERER was not set by browser
 
@@ -122,8 +125,8 @@ Of course we do. ;-)
 
 == Upgrade Notice ==
 
-= 1.2 =
-* Solved error when WordPress DEBUG was true: "Notice: Undefined index: HTTP_REFERER"
+= 1.3 =
+* Changed function used to retrieve the IP data from "GeoIP Detection" to support reverse proxies.
 
 == Contact ==
 
